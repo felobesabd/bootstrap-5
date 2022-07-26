@@ -1,0 +1,217 @@
+:root {
+    --dark-color: #19283f;
+    --main-color: #33d1cc;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+    padding: 10px 20px
+}
+.main-title p::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 150px;
+    background-color: var(--main-color);
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+/* Start Nav */
+.navbar {
+    background-color: var(--dark-color);
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar-expand-lg .navbar-nav .nav-link:focus,
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+.navbar .search {
+    border-left: 2px solid var(--main-color);
+}
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    color: var(--main-color);
+}
+.navbar .main-btn {
+    padding: 10px 20px
+}
+.navbar .navbar-toggler {
+    font-size: 25px;
+    border-color: white;
+}
+/* End Nav */
+/* Start Landing */
+.landing {
+    background-color: var(--dark-color);
+    color: white;
+    min-height: calc(100vh - 72px);
+}
+/* End Landing */
+/* Start Feature */
+.feature h4 {
+    color: var(--yellow-color);
+}
+.feature .main-title p::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 150px;
+    background-color: var(--main-color);
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+}
+.feature .icons {
+    height: 200px;
+}
+.feature .icons .number {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.feature .icons .icon {
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* End Feature */
+/* Start our work */
+.our-work {
+    background-color: #eff7fa;
+}
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li.active {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 50px;
+}
+.our-work ul li:hover:not(li.active) {
+    color: #0d6efd;
+}
+.our-work .app {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .app::before {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #33d1ccc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+    transition: 0.5s;
+}
+.our-work .app:hover::before {
+    transform: translateX(0);
+}
+/* End our work */
+/* Start stuff */
+.stuff .text {
+    max-width: 500px;
+}
+/* End stuff */
+/* Start Team */
+.team {
+    background-color: #eff7fa;
+}
+.team h2 {
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+.team .card {
+    border: none;
+    margin-bottom: 1rem;
+}
+.team .card h4 {
+    background-color: var(--main-color);
+}
+/* End Team */
+/* Start Project */
+.project {
+    background-color: var(--dark-color);
+    color: white;
+}
+/* End Project */
+/* Start Subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text"]:focus {
+    outline: none;
+}
+.subscribe ::placeholder {
+    color: white;
+}
+.subscribe input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/* End Subscribe */
+/* Start Footer */
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .copyright span:first-child {
+    color: var(--main-color);
+}
+.footer .copyright span:last-child {
+    color: var(--yellow-color);
+}
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.footer .facebook {
+    background-color: #1877f2;
+}
+.footer .twitter {
+    background-color: #1da1f2;
+}
+.footer .linkedin {
+    background-color: #0077b5;
+}
+.footer .youtube {
+    background-color: #ff0000;
+}
+/* End Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
